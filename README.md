@@ -7,7 +7,7 @@ Package license: BSD_3_clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Provides (1) pseudo random generators - general linear congruential generators, multiple recursive generators and generalized feedback shift register (SF-Mersenne Twister algorithm and WELL generators); (2) quasi random generators - the Torus algorithm, the Sobol sequence, the Halton sequence (including the Van der Corput sequence) and (3) some RNG tests - the gap test, the serial test, the poker test. The package depends on rngWELL package but it can be provided without this dependency on demand to the maintainer. For true random number generation, use the 'random' package, for Latin Hypercube Sampling (a hybrid QMC method), use the 'lhs' package. A number of RNGs and tests for RNGs are also provided by 'RDieHarder', all available on CRAN. There is also a small stand-alone package 'rngwell19937' for the WELL19937a RNG. 
+Summary: Provides (1) pseudo random generators - general linear congruential generators,  multiple recursive generators and generalized feedback shift register (SF-Mersenne Twister algorithm and WELL generators); (2) quasi random generators - the Torus algorithm, the Sobol sequence, the Halton sequence (including the Van der Corput sequence) and (3) some generator tests - the gap test, the serial test, the poker test. See e.g. Gentle (2003) <doi:10.1007/b97336>. The package can be provided without the rngWELL dependency on demand. Take a look at the Distribution task view of types and tests of random number generators. Version in Memoriam of Diethelm and Barbara Wuertz.
 
 
 
@@ -157,9 +157,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
-* [@daler](https://github.com/daler/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 
