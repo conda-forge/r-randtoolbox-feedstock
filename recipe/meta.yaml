@@ -1,4 +1,4 @@
-{% set version = '1.30.0' %}
+{% set version = "1.30.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/randtoolbox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/randtoolbox/randtoolbox_{{ version }}.tar.gz
-  sha256: 0debf6e270f4e349d6b3d9ddfd6388552495f33f4cd19c9016abfe27d5083790
+  sha256: 25596d8cbcf8a1924e11353293e1670145e90f7615e2df242a485b6cb202e261
 
 build:
   merge_build_host: True  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,6 +51,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=randtoolbox
   license: BSD_3_clause
+  license_file: LICENSE
   summary: Provides (1) pseudo random generators - general linear congruential generators,  multiple
     recursive generators and generalized feedback shift register (SF-Mersenne Twister
     algorithm and WELL generators); (2) quasi random generators - the Torus algorithm,
