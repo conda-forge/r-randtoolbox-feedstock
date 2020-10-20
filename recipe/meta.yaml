@@ -50,7 +50,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=randtoolbox
-  license: BSD_3_clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Provides (1) pseudo random generators - general linear congruential generators,  multiple
     recursive generators and generalized feedback shift register (SF-Mersenne Twister
