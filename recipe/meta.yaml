@@ -1,4 +1,4 @@
-{% set version = "1.30.1" %}
+{% set version = "1.31.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/randtoolbox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/randtoolbox/randtoolbox_{{ version }}.tar.gz
-  sha256: 25596d8cbcf8a1924e11353293e1670145e90f7615e2df242a485b6cb202e261
+  sha256: 66f93e4bdcbd0493d3a003b05dbd7ee008d7ccd2f9a3b8e99afa7f7d3c6c0611
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -52,15 +52,9 @@ about:
   home: https://CRAN.R-project.org/package=randtoolbox
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: Provides (1) pseudo random generators - general linear congruential generators,  multiple
-    recursive generators and generalized feedback shift register (SF-Mersenne Twister
-    algorithm and WELL generators); (2) quasi random generators - the Torus algorithm,
-    the Sobol sequence, the Halton sequence (including the Van der Corput sequence)
-    and (3) some generator tests - the gap test, the serial test, the poker test. See
-    e.g. Gentle (2003) <doi:10.1007/b97336>. The package can be provided without the
-    rngWELL dependency on demand. Take a look at the Distribution task view of types
-    and tests of random number generators. Version in Memoriam of Diethelm and Barbara
-    Wuertz.
+  summary: Provides (1) pseudo random generators - general linear congruential generators,  multiple recursive generators and generalized feedback shift register (SF-Mersenne Twister algorithm and WELL generators); (2) quasi random generators - the Torus algorithm, the Sobol sequence, the Halton sequence (including the Van
+    der Corput sequence) and (3) some generator tests - the gap test, the serial test, the poker test. See e.g. Gentle (2003) <doi:10.1007/b97336>. The package can be provided without the rngWELL dependency on demand. Take a look at the Distribution task view of types and tests of random number generators. Version in Memoriam
+    of Diethelm and Barbara Wuertz.
   license_family: BSD
 
 extra:
