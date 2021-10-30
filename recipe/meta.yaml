@@ -1,4 +1,4 @@
-{% set version = "1.31.0" %}
+{% set version = "1.31.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/randtoolbox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/randtoolbox/randtoolbox_{{ version }}.tar.gz
-  sha256: 66f93e4bdcbd0493d3a003b05dbd7ee008d7ccd2f9a3b8e99afa7f7d3c6c0611
+  sha256: 30992e8156782542e9a2bffb75eb2e35f6d302a8c22cb7c3ed9004f0f0973bad
 
 build:
   merge_build_host: true  # [win]
